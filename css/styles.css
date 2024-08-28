@@ -16,6 +16,121 @@ img{
 .link{
   text-decoration: none;
 }
+h1,h2,h3,h4{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul, ol{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button{
+  cursor: pointer;
+}
+
+.header-container{
+  display: flex; 
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: solid #ECECEC;
+}
+.site-logo{
+  margin-right: 70px;
+}
+.menu{
+  display: flex;
+  column-gap: 30px;
+}
+.site-navigation{
+  display: flex;
+  column-gap: 30px;
+}
+.contacts{
+  display: flex;
+  column-gap: 30px;
+  margin-left: auto;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal-opn-btn{
+  width: 200px;
+height: 50px;
+border-radius: 4px;
+padding-left: 4px;
+padding-right: 4px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ .modal-opn-btn-portfolio{
+min-height: 38px;
+border-radius: 4px;
+padding-left: 4px;
+padding-right: 4px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+.lor-list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.img-list{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.team-card-list{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.footer-menu{
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.footer-logo{
+  margin-bottom: 20px;
+}
+.footer-list{
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.button-list{
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+.project-list{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 404px); 
+    gap: 10px; 
+    padding: 10px;
+  margin-bottom: 32px;
+}
 .site-navigation{
   font-family: "Roboto", sans-serif;
    font-size: 14px;
@@ -42,6 +157,15 @@ img{
  text-align: center;
  color: #ffffff;
  }
+ .modal-opn-btn-portfolio{
+  font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 1,88;
+letter-spacing: 0.06em;
+text-align: center;
+color: #ffffff;
+}
  .article{
   font-family: "Roboto", sans-serif;
 font-size: 14px;
@@ -50,6 +174,16 @@ line-height: 1,41;
 letter-spacing: 0.03em;
 text-align: left;
 color: var(--ar-color)
+ }
+ .article-hero{
+  font-family: Roboto;
+font-size: 44px;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 0.06em;
+text-align: center;
+color: #000;
+
  }
  .sup-article{
   font-family: "Roboto", sans-serif;
@@ -104,11 +238,17 @@ color:var(--focus-text-colour)
 .contacts :focus{
   color:var(--focus-text-colour)
 }
-button{
-  cursor: pointer;
+.footer-list :hover,
+.footer-list :focus{
+  color: var(--focus-text-colour);
 }
 .modal-opn-btn:hover,
 .modal-opn-btn:focus{
+  background-color: var(--focus-text-colour);
+  color: #ffffff;
+}
+.modal-opn-btn-portfolio:hover,
+.modal-opn-btn-portfolio:focus{
   background-color: var(--focus-text-colour);
   color: #ffffff;
 }
